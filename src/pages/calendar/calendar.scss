@@ -1,0 +1,98 @@
+@import "~taro-ui/dist/style/components/divider.scss";
+
+@font-face {
+  font-family: 'Gulf-medium';
+  src: url('../../assets/fonts/Gulf-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.root {
+  font: normal normal normal 14px Gulf-medium;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 500px;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 9999;
+  padding: 0 16PX;
+}
+
+.navBar-title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-105%);
+  font-size: 20PX;
+}
+
+.navbar-back-icon {
+  align-self: center;
+}
+
+.calendar {
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+}
+
+.calendar-month {
+  margin: auto;
+}
+
+.calendar-month-divider {
+  width: 75%;
+  margin: auto;
+  height: 100%;
+  padding: 16rpx 0;
+  flex-grow: 1;
+}
+
+.at-divider__content {
+}
+
+.calendar-days-item {
+  display: flex;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+}
+
+.calendar-day {
+  width: 42.5%;
+  height: 460rpx;
+  border-radius: 15PX;
+  margin: 36rpx 24rpx;
+  box-shadow: 0 0 20PX 0 #848484;
+  border: solid 0 #979797;
+}
+
+.error-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error-content-text {
+  margin: 16rpx 24rpx;
+}
+
+.error-content-button {
+  font-size: 16PX;
+}

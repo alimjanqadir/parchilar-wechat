@@ -1,0 +1,51 @@
+@import "~taro-ui/dist/style/components/action-sheet.scss";
+@import "~taro-ui/dist/style/components/toast.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/modal.scss";
+
+@font-face {
+  font-family: 'Gulf-medium';
+  src: url('../../assets/fonts/Gulf-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.root {
+  font: normal normal normal 14px Gulf-medium;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modal {
+  font: normal normal normal 14px Gulf-medium;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 1);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content image {
+  width: 100%;
+}
+
+.permission-modal-content{
+  direction: rtl;
+  text-align: justify;
+}
